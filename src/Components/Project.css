@@ -1,0 +1,140 @@
+
+.projects{
+    background:#141C2F;
+    padding:80px 8%;
+}
+
+.project-title{
+    margin-bottom:45px;
+}
+
+.project-title h2{
+    font-size:48px;
+    color:#24D8FF;
+    margin-bottom:10px;
+}
+
+.project-title p{
+    color:#B8C1CC;
+    font-size:18px;
+}
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+.project-card{
+    background:#1E243A;
+    border-top:4px solid #24D8FF;
+    border-radius:18px;
+    padding:22px;
+    max-width:350px;
+    margin:auto;
+    transition:.3s;
+    box-shadow:0 0 12px rgba(36,216,255,.15);
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(36,216,255,.35);
+}
+.project-icon{
+    width:55px;
+    height:55px;
+    background:#24D8FF;
+    color:#141C2F;
+    border-radius:14px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:26px;
+    margin-bottom:18px;
+}
+.project-card h3{
+    color:#FFFFFF;
+    font-size:28px;
+    margin-bottom:15px;
+    line-height:1.3;
+}
+.project-card p{
+    color:#E5E7EB;
+    font-size:17px;
+    line-height:1.7;
+    margin-bottom:18px;
+}
+.tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:20px;
+}
+
+.tech span{
+    background:#2A324D;
+    color:#24D8FF;
+    border:1px solid #24D8FF;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+}
+.buttons{
+    display:flex;
+    gap:12px;
+}
+
+.buttons a{
+    flex:1;
+    text-align:center;
+    text-decoration:none;
+    padding:11px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+.buttons a:first-child{
+    border:2px solid #24D8FF;
+    color:#24D8FF;
+    background:transparent;
+}
+
+.buttons a:first-child:hover{
+    background:#24D8FF;
+    color:#141C2F;
+}
+.buttons a:last-child{
+    background:#24D8FF;
+    color:#141C2F;
+}
+
+.buttons a:last-child:hover{
+    background:#18C6EB;
+}
+@media(max-width:768px){
+
+.project-title{
+    text-align:center;
+}
+
+.project-title h2{
+    font-size:40px;
+}
+
+.project-title p{
+    font-size:16px;
+}
+
+.project-container{
+    grid-template-columns:1fr;
+}
+
+.project-card{
+    max-width:100%;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+}

@@ -1,0 +1,173 @@
+.hero{
+    min-height:100vh;
+    background:#0f172a;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8%;
+    gap:80px;
+}
+
+.hero-left{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.profile-card{
+    width:360px;
+    background:#1e293b;
+    border-radius:25px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(124,58,237,.3);
+}
+
+.profile-img{
+    width:100%;
+    max-width:260px;
+    height:270px;
+    object-fit:cover;
+    border-radius:18px;
+    border:3px solid #7c3aed;
+    display:block;
+    margin:0 auto 20px;
+}
+
+.profile-img:hover{
+    transform:scale(1.03);
+}
+
+.code-box{
+    background:#111827;
+    border-radius:15px;
+    padding:18px;
+    text-align:left;
+    font-family:monospace;
+    color:#e2e8f0;
+    line-height:1.8;
+    font-size:15px;
+    margin-top:20px;
+}
+
+.code-box span{
+    color:#22d3ee;
+}
+
+.available{
+    margin-top:20px;
+    color:#22c55e;
+    font-size:18px;
+    font-weight:600;
+}
+.hero-right{
+    flex:1;
+}
+
+.badges{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.badges span{
+    background:#7c3aed;
+    color:white;
+    padding:10px 20px;
+    border-radius:30px;
+    font-size:15px;
+}
+
+.hero-right h1{
+    font-size:65px;
+    color:#e2e8f0;
+    line-height:1.2;
+    margin-bottom:25px;
+}
+
+.hero-right h1 span{
+    color:#22d3ee;
+}
+
+.hero-right p{
+    color:#cbd5e1;
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:40px;
+    max-width:600px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn-primary{
+    background:#7c3aed;
+    color:white;
+    border:none;
+    padding:16px 32px;
+    border-radius:12px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    background:#6d28d9;
+    transform:translateY(-4px);
+}
+
+.btn-secondary{
+    background:transparent;
+    color:#22d3ee;
+    border:2px solid #22d3ee;
+    padding:16px 32px;
+    border-radius:12px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-secondary:hover{
+    background:#22d3ee;
+    color:#0f172a;
+}
+@media(max-width:992px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    gap:50px;
+    padding:100px 20px;
+}
+
+.profile-card{
+    width:100%;
+    max-width:360px;
+}
+
+.profile-img{
+    max-width:230px;
+    height:280px;
+}
+
+.badges{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.hero-right h1{
+    font-size:45px;
+}
+
+.hero-right p{
+    font-size:18px;
+}
+
+.hero-buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+}
